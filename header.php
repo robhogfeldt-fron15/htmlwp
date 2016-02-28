@@ -19,7 +19,7 @@
 
 <?php wp_head(); ?>
 </head>
-<!-- <body class="home fullscreen" <?php body_class(array( "home", "fullscreen")); ?>> -->
+
 <body <?php body_class(); ?>>
 <div class="loadreveal reveal"></div>
 <div id="loadscreen" style="opacity: 0; display: none;"><div id="loader"><span></span></div></div>

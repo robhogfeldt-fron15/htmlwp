@@ -1,6 +1,6 @@
 /* 4. HEADER
 _____________________________________ */
-#header { width: 100%; padding: 5em 4.5% 2em; z-index: 150; letter-spacing: 0.1em; background-color: red}
+#header { width: 100%; padding: 5em 4.5% 2em; z-index: 150; letter-spacing: 0.1em; }
 #header::after { content: ""; display: block; clear: both; }
 
 body.fullscreen #header { position: absolute; }

@@ -14,7 +14,7 @@ gulp.task('serve', function() {
     proxy: "localhost/underscore.com/",
     });
 
-     gulp.watch("sass/**/*.scss").on("change", reload);
+  
 });
 
 //Output Sass-folder to style.css
@@ -26,6 +26,7 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
-
-gulp.task('sass-watch', ['sass'], browserSync.reload);
-gulp.task('default', ['serve']);
+// Default task to be run with `gulp`
+gulp.task('default', ['sass', 'serve'], function () {
+    gulp.watch("sass/**/*.scss",  ['sass']);
+});
